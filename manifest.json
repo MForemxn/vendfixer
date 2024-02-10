@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Print Dialogue Opener",
+  "version": "1.0",
+  "description": "Automatically opens the print dialogue on a specific website.",
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://easteregg.retail.lightspeed.app/webregister/confirmation"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
